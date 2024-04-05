@@ -1,0 +1,16 @@
+.active {
+    cursor: not-allowed;
+    background-color: #111827;
+}
+
+body {
+    background-color: #111827;
+    /* color: #ff539a;
+    color: #6f64ff; */
+}
+
+.container {
+    section {
+        background-color: #11182793;
+    }
+}
