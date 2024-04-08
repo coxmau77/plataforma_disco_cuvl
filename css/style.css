@@ -5,12 +5,20 @@
 
 body {
     background-color: #111827;
-    /* color: #ff539a;
-    color: #6f64ff; */
+    /* color: #ff539a; */
+    /* color: #6f64ff;  */
+    /* color: #7fffd4; */
 }
 
 .container {
     section {
         background-color: #11182793;
     }
+}
+
+mark {
+    background-color: aquamarine;
+    padding: .2rem .4rem;
+    border-radius: 4px;
+    font-weight: 800;
 }
