@@ -1,25 +1,12 @@
-<!-- clase 05 / 06 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tours</title>
+    <title>template</title>
     <link rel="icon" href="./img/icons/favicon.svg" type="image/svg+xml">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: 'aquamarine',
-                hover: 'aqua'
-              }
-            }
-          }
-        }
-      </script>
     <!-- Flowbite + Tailwind -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <!-- CSS propio -->
@@ -27,7 +14,7 @@
 </head>
 <body class="dark">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#6f64ff] to-[#ff539a] opacity-50 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff539a] to-[#6f64ff] opacity-50 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
 
     <!-- header -->
@@ -42,88 +29,17 @@
         </nav>
     </header>
     <!-- /header -->
-    <main class="container mx-auto">
-        <h1 class="m-4 py-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">Tours</h1>
-        
-        <section class="antialiased rounded-lg">
 
-            <div id="welcome" class="p-4 mx-4 text-gray-900 dark:text-white" data-info="user-welcome">Bienvenid@ a tours</div>
-
-            <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-6 lg:py-6">  
-                                          
-                <div class="flow-root max-w-3xl mx-auto mt-6 sm:mt-12 lg:mt-16">
-
-                    <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700 align-middle">
-
-                        <div data-info="show-date" class="flex flex-col justify-center gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-
-                            <i class="bi bi-ticket-perforated-fill text-4xl text-gray-500"></i>
-
-                            <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                08:00 - 09:00 hs
-                            </p>
-                            <h3 class="flex-1 text-lg font-semibold text-gray-900 dark:text-white">
-                                <a href="#" class="hover:underline">Estadio River Plate</a>
-                                <p class="w-full text-sm font-normal text-gray-500 dark:text-gray-400 shrink-0">
-                                    Viernes 01 de Junio 2024.
-                                </p>
-                            </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
-                        </div>
-
-                        <div data-info="show-date" class="flex flex-col justify-center gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-
-                            <i class="bi bi-ticket-perforated-fill text-4xl text-gray-500"></i>
-
-                            <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                23:00 - 01:00 hs
-                            </p>
-                            <h3 class="flex-1 text-lg font-semibold text-gray-900 dark:text-white">
-                                <a href="#" class="hover:underline">Stadium Luna Park</a>
-                                <p class="w-full text-sm font-normal text-gray-500 dark:text-gray-400 shrink-0">
-                                    Sabado 20 de Junio 2024.
-                                </p>
-                            </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
-                        </div>
-
-                        <div data-info="show-date" class="flex flex-col justify-center gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-
-                            <i class="bi bi-ticket-perforated-fill text-4xl text-gray-500"></i>
-
-                            <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                19:00 - 22:00 hs
-                            </p>
-                            <h3 class="flex-1 text-lg font-semibold text-gray-900 dark:text-white">
-                                <a href="#" class="hover:underline">Teatro Gran Rex</a>
-                                <p class="w-full text-sm font-normal text-gray-500 dark:text-gray-400 shrink-0">
-                                    Viernes 01 de Junio 2024.
-                                </p>
-                            </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
-                        </div>
-                        <div data-info="show-date" class="flex flex-col justify-center gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
-
-                            <i class="bi bi-ticket-perforated-fill text-4xl text-gray-500"></i>
-
-                            <p class="w-32 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
-                                21:00 - 00:00 hs
-                            </p>
-                            <h3 class="flex-1 text-lg font-semibold text-gray-900 dark:text-white">
-                                <a href="#" class="hover:underline">Movistar Arena</a>
-                                <p class="w-full text-sm font-normal text-gray-500 dark:text-gray-400 shrink-0">
-                                    Domingo 01 de Junio 2024.
-                                </p>
-                            </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
-                        </div>
-                
-                        
-                    </div>
-                </div>
+    <!-- hero section -->
+    <section class="relative isolate px-6 lg:px-8">
+        <div class="mx-auto  py-32 sm:py-48 lg:py-56">            
+            <div class="text-center">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">Template</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-50">Vista modelo de esta web app</p>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    <!-- /hero section -->
     <!-- nav -->
     <div class="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-800 dark:border-gray-600">
         <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
@@ -162,7 +78,7 @@
                 <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
             <!-- tours -->
-            <a  href="./tours.html" data-tooltip-target="tooltip-tours" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-900 group active">
+            <a  href="./tours.html" data-tooltip-target="tooltip-tours" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-900 group">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" d="M5 5a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1 2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2ZM3 19v-7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6.01-6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-10 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" clip-rule="evenodd"/>
                 </svg>
@@ -190,11 +106,9 @@
      <!-- footer -->
     <footer class="bg-gray-900 py-20"></footer>
     <!-- /footer -->
-
-    <!-- Flowbite script -->
+     <!-- Flowbite script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <!-- javaScript propio -->
     <script src="./js/script.js"></script>
-    <!-- <script src="./js/tours.js"></script> -->
 </body>
 </html>
