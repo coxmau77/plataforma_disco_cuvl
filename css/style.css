@@ -28,3 +28,25 @@ mark {
     border-radius: 4px;
     font-weight: 800;
 }
+
+[data-info='user-welcome'] {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotar {
+    animation: girar 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* .hide-content {
+    display: none;
+} */
