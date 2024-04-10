@@ -7,13 +7,9 @@ let nombre = prompt('Ingrese su nombre').toLowerCase();
 // alert(saludo);
 
 const welcome_block = document.getElementById('welcome');
-const welcome_metaData = welcome_block.getAttribute('data-info');
 let welcome_txt = 'Bienvenid@';
 
 let ticketIcon = document.getElementById('ticket_icon');
-
-
-console.log(welcome_metaData);
 
 // if (nombre.length < 2) {
 //     nombre = prompt("Demasiado corto, dinos, cuál es realmente tu nombre?");
