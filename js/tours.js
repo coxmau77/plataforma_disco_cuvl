@@ -32,6 +32,11 @@ ticketIcon.classList.add('text-primary', 'rotar');
 welcome_block.innerHTML = `Hola <mark>${nombre.toUpperCase()}</mark> como estas! ${welcome_txt} a tours!`;
 
 // Manipular Varios Elementos - SweetAlert
+
+
+const buyBtns = document.querySelectorAll("[data-info='user-welcome'] > button")
+
+
 // swal({
 //     title: "Good job!",
 //     text: "You clicked the button!",
