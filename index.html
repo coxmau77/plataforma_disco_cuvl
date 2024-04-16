@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,18 @@
     <link rel="icon" href="./img/icons/favicon.svg" type="image/svg+xml">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                primary: 'aquamarine',
+                hover: 'aqua'
+                }
+            }
+            }
+        }
+    </script>
     <!-- Flowbite + Tailwind -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <!-- CSS propio -->
@@ -21,11 +33,15 @@
     <header>
         <nav class="px-4 lg:px-6 py-2.5">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <a href="./home.html" class="flex items-center">
+                <a href="./index.html" class="flex items-center">
                     <img src="./img/brand/soundwave.svg" class="mr-3 h-6 sm:h-9" alt="Plataforma disco Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Plataforma Disco</span>
                 </a>
             </div>
+            <ul class="flex text-yellow-500 justify-center gap-6">
+                <li><a href="./template-main.html">Template main</a></li>
+                <li><a href="./template-form.html">Template form</a></li>
+            </ul>
         </nav>
     </header>
     <!-- /header -->
@@ -40,6 +56,13 @@
         </div>
     </section>
     <!-- /hero section -->
+    <!-- main section -->
+    <main>
+
+        
+
+    </main>
+    <!-- /main section -->
     <!-- nav -->
     <div class="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-800 dark:border-gray-600">
         <div class="grid h-full max-w-lg grid-cols-5 mx-auto">

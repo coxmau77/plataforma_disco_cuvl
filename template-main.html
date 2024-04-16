@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>template</title>
+    <title>Templates</title>
     <link rel="icon" href="./img/icons/favicon.svg" type="image/svg+xml">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: 'aquamarine',
+                hover: 'aqua'
+              }
+            }
+          }
+        }
+      </script>
     <!-- Flowbite + Tailwind -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <!-- CSS propio -->
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body class="dark">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -21,12 +34,16 @@
     <header>
         <nav class="px-4 lg:px-6 py-2.5">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <a href="./home.html" class="flex items-center">
+                <a href="./index.html" class="flex items-center">
                     <img src="./img/brand/soundwave.svg" class="mr-3 h-6 sm:h-9" alt="Plataforma disco Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Plataforma Disco</span>
                 </a>
             </div>
         </nav>
+        <ul class="flex text-yellow-500 justify-center gap-6">
+                <li><a href="./template-main.html">Template main</a></li>
+                <li><a href="./template-form.html">Template form</a></li>
+            </ul>
     </header>
     <!-- /header -->
 
@@ -40,6 +57,55 @@
         </div>
     </section>
     <!-- /hero section -->
+
+    <main>
+        <button type="button" class="text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center" disabled>Disabled button</button>
+
+        <!-- <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+            <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+            </svg>
+            Comprar ahora
+        </button> -->
+
+        <!-- Agregar atributos boton bloqueado -->
+        <!-- cursor-not-allowed, disabled -->
+
+        <!-- Cambiar valores de los atributos -->
+        <!-- text-dark > text-gray-600
+        bg-primary > bg-gray-300
+        dark:hover:secondary > dark:hover:bg-gray-300  -->
+
+        <!-- Eliminar atributos -->
+        <!-- onclick="getTickets('Viernes 10 de Junio 2024', true)" -->
+
+        <button type="button" class="text-gray-600 bg-gray-300 hover:bg-hover focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-gray-300 dark:hover:bg-gray-300 dark:focus:ring-primary cursor-not-allowed disabled"  id="buy_Button">
+            <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+            <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+            </svg>
+            <span>Tickets no disponibles</span> 
+        </button>
+
+        <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-primary dark:hover:secondary dark:focus:ring-primary" onclick="btnDisable()" id="buyButton">
+            <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+            <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+            </svg>
+            <span>Comprar tickets ahora</span>
+        </button>
+
+        <!-- <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary" onclick="getTickets('Viernes 10 de Junio 2024', true)" id="buyButton">
+            Comprar tickets
+        </button> -->
+        <hr class="m-8">
+
+        <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-primary dark:hover:secondary dark:focus:ring-primary" onclick="getTickets('Viernes 10 de Junio 2024', true)" id="buy_button">
+            <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+            <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+            </svg>
+            <span>Comprar tickets ahora</span>
+        </button>
+
+    </main>
     <!-- nav -->
     <div class="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-gray-800 dark:border-gray-600">
         <div class="grid h-full max-w-lg grid-cols-5 mx-auto">

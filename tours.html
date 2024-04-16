@@ -1,6 +1,6 @@
 <!-- clase 05 / 06 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
     <header>
         <nav class="px-4 lg:px-6 py-2.5">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <a href="./home.html" class="flex items-center">
+                <a href="./index.html" class="flex items-center">
                     <img src="./img/brand/soundwave.svg" class="mr-3 h-6 sm:h-9" alt="Plataforma disco Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Plataforma Disco</span>
                 </a>
@@ -69,10 +69,10 @@
                             <h3 class="flex-1 text-lg font-semibold text-gray-900 dark:text-white">
                                 <a href="#" class="hover:underline">Estadio River Plate</a>
                                 <p class="w-full text-sm font-normal text-gray-500 dark:text-gray-400 shrink-0">
-                                    Viernes 01 de Junio 2024.
+                                    Viernes 10 de Junio 2024.
                                 </p>
                             </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
+                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary" onclick="getTickets('Viernes 10 de Junio 2024', true)" id="buyButton">Comprar tickets</button>
                         </div>
 
                         <div data-info="show-date" class="flex flex-col justify-center gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -88,7 +88,7 @@
                                     Sabado 20 de Junio 2024.
                                 </p>
                             </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
+                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary" onclick="getTickets('Sabado 20 de Junio 2024.', false)" id="buyButton">Comprar tickets</button>
                         </div>
 
                         <div data-info="show-date" class="flex flex-col justify-center gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -101,10 +101,10 @@
                             <h3 class="flex-1 text-lg font-semibold text-gray-900 dark:text-white">
                                 <a href="#" class="hover:underline">Teatro Gran Rex</a>
                                 <p class="w-full text-sm font-normal text-gray-500 dark:text-gray-400 shrink-0">
-                                    Viernes 01 de Junio 2024.
+                                    Viernes 30 de Junio 2024.
                                 </p>
                             </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
+                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary" id="buyButton">Comprar tickets</button>
                         </div>
 
                         <div data-info="show-date" class="flex flex-col justify-center gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
@@ -120,7 +120,7 @@
                                     Miercoles 23 de Mayo 2024, entrega final. <span class="bg-yellow-200 text-xs text-gray-900 py-1 px-2 rounded-full">Ultima fecha!</span>
                                 </p>
                             </h3>
-                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary">Comprar tickets</button>
+                            <button type="button" class="text-dark bg-primary hover:bg-hover focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-primary" id="buyButton">Comprar tickets</button>
                         </div>
                                 
                     </div>
