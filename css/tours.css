@@ -1,0 +1,14 @@
+.buy-button {
+    padding: .4rem 1.4rem;
+    border-radius: 100vw;
+    font-size: normal;
+    color: rgb(70, 70, 70);
+    background-color: rgba(245, 245, 245, 0.555);
+}
+
+.btn-enabled {
+    color: black;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
