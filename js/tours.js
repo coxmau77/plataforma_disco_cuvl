@@ -1,7 +1,7 @@
 // console.log("Se elecuto tours.js");
 
 let identidad = prompt('Como te identificas?\n1 - Femenino.\n2 - Masculino.\n3 - Prefiero no decirlo.');
-// let identidad = 3;
+identidad = 3;
 let nombre = prompt('Ingrese su nombre').toLowerCase();
 // let nombre = "Pepe Argento";
 
@@ -86,7 +86,8 @@ function activarBoton() {
   // <!-- Agregar atributos boton bloqueado -->
   // <!-- cursor-not-allowed, disabled -->
   for (let index = 0; index < buyButtons.length; index++) {
-
+      
+      buyButtons[index].removeAttribute("disabled");;
       buyButtons[index].classList.remove("cursor-not-allowed", "disabled");
       buyButtons[index].classList.add("btn-enabled");
       buyButtons[index].textContent = "Comprar tickets ahora";
