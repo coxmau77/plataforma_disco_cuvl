@@ -99,6 +99,7 @@ function activarBoton() {
 function desactivarBoton(){
   for (let index = 0; index < buyButtons.length; index++) {
     buyButtons[index].classList.remove("btn-enabled");
+    buyButtons[index].setAttribute("disabled", "");
     // buyButtons[index].classList.add("btn-enabled");
     buyButtons[index].textContent = "Tickes NO disponibles";  
   }

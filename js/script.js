@@ -1,4 +1,4 @@
-// console.log("Se ejecuto script.js")
+console.log("Se ejecuto script.js")
 
 
 
@@ -13,11 +13,11 @@
 
 
 // Objeto con los atributos y sus valores deseados
-var atributos = {
-    "href": "https://www.ejemplo.com",
-    "target": "_blank",
-    "title": "Enlace externo"
-};
+// var atributos = {
+//     "href": "https://www.ejemplo.com",
+//     "target": "_blank",
+//     "title": "Enlace externo"
+// };
 
 // Iterar sobre el objeto de atributos
 // for (var key in atributos) {
