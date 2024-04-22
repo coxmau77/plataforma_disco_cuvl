@@ -1,0 +1,51 @@
+button {
+    color: #cfc1fd;
+    /* Color del texto */
+    background-color: #007bff;
+    /* Color de fondo */
+    border: none;
+    /* Borde */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: black;
+    /* Cambia el color de fondo al pasar el mouse */
+}
+
+button:focus {
+    outline: yellow 2px solid;
+    /* Sombra cuando está enfocado */
+    box-shadow: 0 0 5px yellow;
+}
+
+button:active {
+    background-color: #00b365;
+    /* Cambia el color de fondo cuando está activo */
+}
+
+button:disabled {
+    background-color: #f0f0f0;
+    /* Cambia el color de fondo cuando está desactivado */
+    color: #999;
+    /* Cambia el color del texto cuando está desactivado */
+}
+
+button::before {
+    content: "Antes";
+    /* Contenido antes del contenido del botón */
+    padding-right: 10px;
+    /* Agrega espacio a la derecha del contenido */
+    /* background-color: pink; */
+
+}
+
+button::after {
+    content: "Después";
+    /* Contenido después del contenido del botón */
+    padding-left: 10px;
+    /* Agrega espacio a la izquierda del contenido */
+}
