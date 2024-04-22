@@ -1,7 +1,8 @@
 // console.log("Se elecuto tours.js");
 
 let identidad = prompt('Como te identificas?\n1 - Femenino.\n2 - Masculino.\n3 - Prefiero no decirlo.');
-identidad = 3;
+// identidad = 3;
+
 let nombre = prompt('Ingrese su nombre').toLowerCase();
 // let nombre = "Pepe Argento";
 
@@ -53,6 +54,9 @@ if (edad >= 18) {
 ticketIcon.classList.remove('text-gray-700');
 ticketIcon.classList.add('text-primary', 'rotar');
 welcome_block.innerHTML = `Hola <mark>${nombre.toUpperCase()}</mark> como estas! ${welcome_txt} a tours!`;
+
+
+
 
 // Manipular Varios Elementos - SweetAlert
 function getTickets(place, ticket){
