@@ -1,0 +1,16 @@
+{
+  "name": "plataforma_disco_cuvl",
+  "version": "1.0.0",
+  "description": "<base target=\"_blank\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
