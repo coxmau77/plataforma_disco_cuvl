@@ -1,1 +1,133 @@
 <!-- clase 04 login acceso-->
+<!DOCTYPE html>
+<html lang="es-AR" class="dark">
+  <!-- <html lang="es-AR" class="light"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>public/tours</title>
+    <link rel="icon" href="../img/brand/favicon.svg" type="image/svg+xml" />
+    <!-- Tailwind + Flowbite CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Mi estilo CSS -->
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="flex flex-col items-center justify-center px-6 lg:h-screen lg:gap-y-12">
+        
+        <div
+          class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col md:max-w-xl md:flex-row w-full md:max-w-[1024px] [&amp;>img]:hidden md:[&amp;>img]:w-96 md:[&amp;>img]:p-0 md:[&amp;>*]:w-full md:[&amp;>*]:p-16 lg:[&amp;>img]:block"
+          data-testid="flowbite-card"
+        >
+          <img
+            alt=""
+            class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            src="https://flowbite-pro-react-admin-dashboard.vercel.app/images/authentication/create-account.jpg"
+          />
+          <div class="flex h-full flex-col justify-center gap-4 p-6">
+            <h1 class="mb-3 text-2xl font-bold dark:text-white md:text-3xl">
+              Create a Free Account
+            </h1>
+            <form>
+              <div class="mb-4 flex flex-col gap-y-3">
+                <label
+                  class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                  for="email"
+                  >Your email</label
+                >
+                <div class="flex">
+                  <div class="relative w-full">
+                    <input
+                      class="block w-full border disabled:cursor-not-allowed disabled:opacity-50 bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 rounded-lg p-2.5 text-sm"
+                      id="email"
+                      name="email"
+                      placeholder="name@company.com"
+                      type="email"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6 flex flex-col gap-y-3">
+                <label
+                  class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                  for="password"
+                  >Your password</label
+                >
+                <div class="flex">
+                  <div class="relative w-full">
+                    <input
+                      class="block w-full border disabled:cursor-not-allowed disabled:opacity-50 bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 rounded-lg p-2.5 text-sm"
+                      id="password"
+                      name="password"
+                      placeholder="••••••••"
+                      type="password"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6 flex flex-col gap-y-3">
+                <label
+                  class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                  for="confirmPassword"
+                  >Confirm password</label
+                >
+                <div class="flex">
+                  <div class="relative w-full">
+                    <input
+                      class="block w-full border disabled:cursor-not-allowed disabled:opacity-50 bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 rounded-lg p-2.5 text-sm"
+                      id="confirmPassword"
+                      name="confirmPassword"
+                      placeholder="••••••••"
+                      type="password"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6 flex items-center gap-x-3">
+                <input
+                  class="h-4 w-4 rounded border border-gray-300 bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+                  type="checkbox"
+                  id="acceptTerms"
+                  name="acceptTerms"
+                /><label
+                  class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                  for="acceptTerms"
+                  >I accept the&nbsp;<a
+                    href="#"
+                    class="text-primary-700 dark:text-primary-200"
+                    >Terms and Conditions</a
+                  ></label
+                >
+              </div>
+              <div class="mb-7">
+                <button
+                  class="text-white bg-blue-700 border border-transparent hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 disabled:hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 dark:disabled:hover:bg-blue-600 focus:!ring-2 p-0 font-medium rounded-lg w-full lg:w-auto"
+                  type="submit"
+                >
+                  <span class="flex items-center rounded-md text-sm px-3 py-2"
+                    >Create account</span
+                  >
+                </button>
+              </div>
+              <p class="text-sm text-gray-500 dark:text-gray-300">
+                Already have an account?&nbsp;<a
+                  href="#"
+                  class="text-primary-600 dark:text-primary-200"
+                  >Login here</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tailwind + Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Mi Script JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
