@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <div id="marketing-banner" tabindex="-1" class="fixed z-50 flex flex-col md:flex-row justify-between w-[calc(100%-2rem)] p-4 -translate-x-1/2 bg-white border border-gray-100 rounded-lg shadow-sm lg:max-w-7xl left-1/2 top-6 dark:bg-gray-700 dark:border-gray-600">
+    <div id="marketing-banner" tabindex="-1" class="fixed z-50 flex flex-col md:flex-row justify-between w-[calc(100%-2rem)] p-8 -translate-x-1/2 bg-white border border-gray-100 rounded-lg shadow-sm lg:max-w-7xl left-1/2 top-6 dark:bg-gray-700 dark:border-gray-600">
         
         <div class="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
             <div class="flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600">
@@ -172,7 +172,7 @@
 
         <div class="flex flex-wrap items-center">
             <h1 class="text-5xl font-extrabold dark:text-white">Tours</h1>
-            <small class="animate-pulse text-3xl ms-4 font-semibold text-gray-500 dark:text-gray-400" id="welcome">Bienvenid@ a tours</small>
+            <small class="animate-pulse text-3xl ms-4 font-semibold text-gray-500 dark:text-gray-400" id="welcome"></small>
         </div>
         
 
@@ -240,7 +240,7 @@
                     <h3 class="flex-1 text-lg font-semibold text-gray-900 dark:text-white">
                         <a href="#" class="hover:underline">Movistar Arena</a>
                         <p class="w-full text-sm font-normal text-gray-500 dark:text-gray-400 shrink-0">
-                            Miercoles 23 de Mayo 2024, entrega final. <br><span class="bg-yellow-200 text-xs text-gray-900 py-1 px-2 rounded-full">Ultima fecha!</span>
+                            Miercoles 23 de Mayo 2024, entrega final. <br><span class="animate-pulse bg-yellow-200 text-xs text-gray-900 py-1 px-2 rounded-full">Ultima fecha!</span>
                         </p>
                     </h3>
                     <button type="button" class="buy-button cursor-not-allowed" onclick="getTickets('Viernes 10 de Junio 2024', false)" disabled>
@@ -441,6 +441,6 @@
     <!-- Tailwind + Flowbite JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <!-- Mi Script JS -->
-    <script src="../js/tours.js"></script>
+    <script src="../js/tours.js" defer></script>
   </body>
 </html>
