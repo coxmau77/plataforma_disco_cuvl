@@ -15,7 +15,7 @@ const personasDB = require('./models/personas');
 // Cada vez que se haga un pedido HTTP debera utilizar la informacion que viene en route
 app.use('/', route);
 
-
+window.location.assign("./public");
 
 // Listen
 app.listen(PORT, () => {
